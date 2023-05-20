@@ -12,7 +12,7 @@ jobs:
         run: |
           curl \
             -X POST \
-            -H "Authorization: token ${{ secrets.MY_TOKEN }}" \
+            -H "Authorization: token ${{ secrets.SUDHAMSH_TOKEN }}" \
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
             -d '{"body":"Hello user!\\\nThanks for opening an issue  we will resolve it soon!!!\\\nHave a nice day😄.\\\n\\\n![Image](https://i.redd.it/wf2pdan4rbk41.png)"}'
